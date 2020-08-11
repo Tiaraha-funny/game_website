@@ -1,8 +1,8 @@
 # Game_website
 
-In this website I am working on scss. To get start, I follow these steps:
+In this website I am working on scss. To get start, I need follow these steps:
 
-    1- Create the package.janson 
+    1- Create the package.json 
     2- Install node modules by using npm i -D node-sass so that I get the dev independancy
     3- Create gitignore file to ignore the node_modules
     4- Once the package is created, edit the scripts code about css and css watch to run the code
