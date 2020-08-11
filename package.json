@@ -1,0 +1,23 @@
+{
+  "name": "game_website",
+  "version": "1.0.0",
+  "description": "gaming",
+  "main": "index.js",
+  "scripts": {
+    "css": "node-sass scss/index.scss -o css",
+    "css:watch": "npm run css && node-sass scss -w -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tiaraha-funny/game_website.git"
+  },
+  "author": "Petah Jeannie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tiaraha-funny/game_website/issues"
+  },
+  "homepage": "https://github.com/Tiaraha-funny/game_website#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
