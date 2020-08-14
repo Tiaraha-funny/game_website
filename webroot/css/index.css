@@ -12,6 +12,11 @@ main {
   color: #ffffff;
   background-color: black; }
 
+button {
+  background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
+  border-radius: 3.94008px;
+  padding: 16px; }
+
 .masthead__heading {
   background-image: url("../img/big-yard-photo.png");
   background-repeat: no-repeat;
