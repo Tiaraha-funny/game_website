@@ -1,8 +1,20 @@
 @font-face {
-  font-family: "bebas neue";
+  font-weight: 400;
+  font-family: "hahaha";
   font-style: normal;
+  src: url("../fonts/BebasNeue-Regular.woff2") format(woff2), url("../fonts/BebasNeue-Regular.woff") format(woff); }
+
+@font-face {
   font-weight: 700;
-  src: url("/webroot/fonts/OpenSans-Bold.woff2") format("woff2"), url("/webroot/fonts/OpenSans-Bold.woff") format("woff"); }
+  font-family: "open sans";
+  font-style: normal;
+  src: url("../fonts/OpenSans-Bold.woff2") format(woff2), url("../fonts/OpenSans-Bold.woff") format(woff); }
+
+@font-face {
+  font-weight: 400;
+  font-family: "open sans";
+  font-style: normal;
+  src: url("../fonts/OpenSans-Regular.woff2") format(woff2), url("../fonts/OpenSans-Regular.woff") format(woff); }
 
 body {
   font-family: "bebas neue";
@@ -17,33 +29,33 @@ button {
   border-radius: 3.94008px;
   padding: 16px; }
 
-.masthead__heading {
+.sitehead__heading {
   background-image: url("../img/big-yard-photo.png");
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff; }
 
-.masthead__hading--main {
+.sitehead__heading--main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding-block-start: 16px;
   color: #ffffff; }
 
-.masthead__heading--logo {
+.sitehead__heading--logo {
   margin-block-start: -25px;
   margin-block-end: 0;
   margin-inline-start: 15px; }
 
-.sitehead__article {
+.masthead__article {
   text-align: center;
   text-transform: uppercase; }
 
-.sitehead__article--heading {
-  font-family: "bebas neue";
+.masthead__article--heading {
+  font-family: "hahaha";
   font-size: 16px; }
 
-.sitehead__article--subheading h3:nth-of-type(1) {
+.masthead__article--subheading h3:nth-of-type(1) {
   font-size: 14px;
   text-align: center;
   margin-inline-start: 36px;
