@@ -32,6 +32,10 @@ button {
 h2 {
   margin: 0; }
 
+p {
+  font-family: "Open Sans";
+  font-size: 14px; }
+
 .sitehead {
   position: relative;
   width: 100%;
@@ -67,6 +71,28 @@ h2 {
   position: absolute;
   padding-block-start: 10%;
   padding-inline-end: 78%; }
+
+.heading {
+  font-size: 33px; }
+
+.sitehead__article--subheading {
+  font-size: 18px; }
+
+.masthead__article {
+  padding-inline-start: 20px; }
+
+.masthead__article--header {
+  padding-block-start: 30px;
+  font-size: 18px; }
+
+.masthead__article--subheading {
+  font-size: 33px; }
+
+.subheading {
+  border-block-end: 1px solid white; }
+
+.description {
+  margin-inline-start: 36.48px; }
 
 .masthead__sos {
   background-image: url(../img/big-black-yard.png);
