@@ -22,7 +22,6 @@ body {
 
 main {
   color: #ffffff;
-  background-color: black;
   margin: -5px; }
 
 button {
@@ -69,5 +68,26 @@ h2 {
   padding-block-start: 10%;
   padding-inline-end: 78%; }
 
-.masthead__article {
-  margin: 0; }
+.masthead__sos {
+  background-image: url(../img/big-black-yard.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 689px; }
+
+.masthead__special {
+  background-image: url(../img/a-strong-angry-man.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.masthead__computer {
+  background-image: url(../img/dark-house-with-light.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.masthead__think {
+  background-color: black; }
+
+.masthead__touch {
+  background-image: url(../img/sculpture.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
