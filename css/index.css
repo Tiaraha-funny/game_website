@@ -29,10 +29,21 @@ button {
   border-radius: 3.94008px;
   padding: 16px; }
 
-.sitehead__heading {
+.sitehead {
+  position: relative;
+  top: 0;
+  left: 0;
   background-image: url("../img/big-yard-photo.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; }
+
+.menu {
+  padding-inline-end: 139px; }
+
+.sitehead__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   color: #ffffff; }
 
 .sitehead__heading--main {
