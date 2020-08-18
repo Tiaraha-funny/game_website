@@ -1,16 +1,41 @@
 .masthead__article {
   padding-inline-start: 20px;
 }
+
 .masthead__article--header {
   padding-block-start: 30px;
   font-size: 18px;
 }
+
 .masthead__article--subheading {
   font-size: 33px;
 }
+
 .subheading {
   border-block-end: 1px solid white;
 }
 .description {
   margin-inline-start: 36.48px;
+  padding-block-end: 20px;
+}
+.figure {
+  position: relative;
+}
+.figure-1 {
+  position: absolute;
+  left: 37.79px;
+  top: -10px;
+  z-index: 3;
+}
+.figure-2 {
+  position: absolute;
+  left: 39.44px;
+  z-index: 2;
+  top: 3px;
+}
+.figure-3 {
+  z-index: 1;
+  left: 97.24px;
+  top: 20px;
+  position: absolute;
 }
