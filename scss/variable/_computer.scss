@@ -1,0 +1,23 @@
+.masthead__computer {
+    text-align: center;
+}
+
+.computer__header
+.computer__submheader {
+
+}
+
+.table__menu {
+
+} 
+
+.lists {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.table__menu ul > li {
+    list-style: none;
+}
+.table__menu ul > li > span {
+    color: #FFB548;
+}
