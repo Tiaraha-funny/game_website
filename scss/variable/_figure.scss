@@ -1,19 +1,36 @@
 .figure {
-  position: absolute;
-  width: 100vw;
-  height: calc(calc(100vw * 388)/ 343);
+  position: relative;
+  left: 0;
+  top: 0;
+  margin-inline-start: 2px;
+  // padding-block-start: 113%;
   }
-  .figure-1 {
-    left: 11%;
+
+  .figure__primary {
+    position: absolute;
     z-index: 3;
+    left: 37px;
+    top: 0;
+    // left: 6.8%;
+    // top: 0.72%;
   }
-  .figure-2 {
-    left: 15%;
+
+  .figure__secondary {
+    position: absolute;
     z-index: 2;
-    top: 12px;
+    left: 38.24px;
+    top: 9px;
+    // left: 2.5%;
+    // top: -0.38%;
   }
-  .figure-3 {
+
+  .figure__thirdly {
+    position: absolute;
     z-index: 1;
-    left: 35%;
-    top: 36px;
+    left: 100px;
+    top: 21px;
+    // left: 2.22%;
+    // top: 0.57%;
+    // padding-block-start: 9.57%;
+    // padding-inline-start: 30.22%;
   }
