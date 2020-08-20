@@ -1,24 +1,30 @@
 .masthead__computer {
     text-align: center;
 }
+.computer__header {
+    font-size: 14px;
+    padding-block-start: 92px;
+}
 
-.computer__header
 .computer__submheader {
-
+    margin-block-start: -45px;
 }
 
 .table__menu {
-
+    mix-blend-mode: normal;
+    margin-inline-end: 1rem;
+    margin-inline-start: -1rem;
 } 
 
 .lists {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
-.table__menu ul > li {
+.lists > li {
     list-style: none;
+    border: 0.504234px solid #979797;
 }
-.table__menu ul > li > span {
+.lists > li > span {
     color: #FFB548;
 }
 
