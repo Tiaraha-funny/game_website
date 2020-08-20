@@ -101,29 +101,47 @@ u {
   margin-inline-start: 36.48px;
   padding-block-end: 20px; }
 
-.figure {
+figure {
+  margin: 0;
+  padding: 0;
   position: relative;
-  left: 0;
-  top: 0;
-  margin-inline-start: 2px; }
+  padding-bottom: calc(100% * 273 / 249);
+  margin-inline-end: 4rem;
+  margin-inline-start: 2rem; }
+
+figure div {
+  position: absolute; }
 
 .figure__primary {
-  position: absolute;
   z-index: 3;
-  left: 37px;
-  top: 0; }
+  top: 0;
+  left: 0;
+  right: calc(100% * 24 / 249); }
 
 .figure__secondary {
-  position: absolute;
   z-index: 2;
-  left: 38.24px;
-  top: 9px; }
+  top: 40%;
+  height: 80%;
+  right: calc(100% * 12 / 249);
+  left: calc(100% * 12 / 249);
+  transform: scale(calc(249 / 273)) translateY(-50%);
+  transform-origin: 100% 0%; }
 
 .figure__thirdly {
-  position: absolute;
   z-index: 1;
-  left: 100px;
-  top: 21px; }
+  left: calc(100% * 24 / 149);
+  padding-top: calc(100% * 12 / 249);
+  right: 0;
+  top: 5%;
+  height: 65%; }
+
+.figure-1,
+.figure-2,
+.figure-3 {
+  object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 100%; }
 
 .special {
   width: 60%;
@@ -146,6 +164,32 @@ u {
 .table__menu ul > li > span {
   color: #FFB548; }
 
+.lists__item1 {
+  grid-column-start: 1;
+  grid-column-end: 2; }
+
+.lists__item2 {
+  grid-column-start: 2;
+  grid-column-end: 3; }
+
+.lists__item3 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3; }
+
+.lists__item4 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3; }
+
+.lists__item5 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4; }
+
 .first__progress,
 .second__progress,
 .last__progress {
@@ -160,18 +204,23 @@ u {
   background-image: url(../img/big-black-yard.png);
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
   height: 689px; }
 
 .masthead__special {
   background-image: url(../img/strong-angry-man.png);
   background-repeat: no-repeat;
   background-size: cover;
-  margin-block-start: -19%; }
+  margin-block-start: -20%;
+  width: 100%;
+  height: 515px; }
 
 .masthead__computer {
   background-image: url(../img/dark-house-with-light.png);
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  width: 100%;
+  height: 719px; }
 
 .masthead__think {
   background-color: black; }
@@ -179,7 +228,9 @@ u {
 .masthead__touch {
   background-image: url(../img/sculpture.png);
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  width: 100%;
+  height: 834px; }
 
 img {
   max-width: 100%; }
