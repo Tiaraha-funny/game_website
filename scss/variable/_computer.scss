@@ -21,3 +21,30 @@
 .table__menu ul > li > span {
     color: #FFB548;
 }
+
+.lists__item1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.lists__item2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.lists__item3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.lists__item4 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.lists__item5 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
