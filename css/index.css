@@ -27,6 +27,7 @@ main {
 button {
   background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
   border-radius: 3.94008px;
+  border: 0;
   padding: 16px; }
 
 h2 {
@@ -39,19 +40,26 @@ p {
 img {
   max-width: 100%; }
 
-u {
-  text-decoration: #F3AF34; }
+span {
+  color: #FFB548; }
+
+li {
+  list-style: none; }
+
+footer {
+  background-color: #000000;
+  color: #ffffff; }
 
 .sitehead {
   position: relative;
-  width: 100%;
-  height: 571px;
   top: 0;
   left: 0;
-  background-image: url("../img/big-yard-photo.png");
+  background-image: url(../img/big-yard-photo.png);
   background-repeat: no-repeat;
-  background-size: cover;
-  color: #ffffff; }
+  background-size: 100% 100%;
+  color: #ffffff;
+  margin-block-end: 0;
+  margin-inline-end: -20%; }
 
 .sitehead__header {
   display: flex;
@@ -62,21 +70,24 @@ u {
 .sitehead__header > h1 {
   margin: 0; }
 
+.language-selector {
+  margin-inline-start: 45%; }
+
 .menu {
-  padding-inline-end: 1%; }
+  padding-inline-end: 20%; }
 
 .sitehead__container {
-  position: absolute;
   text-align: center;
-  left: 11%;
-  right: 11%;
-  top: 38%;
-  bottom: 55%; }
+  padding-inline-end: 100px;
+  padding-inline-start: 20px;
+  padding-block-start: 130px;
+  padding-block-end: 200px; }
 
 .sitehead__article--bottom {
   position: absolute;
-  padding-block-start: 10%;
-  padding-inline-end: 78%; }
+  padding-inline-end: 200px;
+  margin-block-start: 120px;
+  padding-inline-start: 20px; }
 
 .heading {
   font-size: 33px; }
@@ -87,7 +98,7 @@ u {
 .masthead__article {
   padding-inline-start: 20px; }
 
-.masthead__article--header {
+.header__sos {
   padding-block-start: 30px;
   font-size: 18px; }
 
@@ -95,11 +106,17 @@ u {
   font-size: 33px; }
 
 .subheading {
-  border-block-end: 1px solid white; }
+  border-block-end: 1px solid white;
+  padding-block-end: 20px; }
 
 .description {
   margin-inline-start: 36.48px;
-  padding-block-end: 20px; }
+  padding-block-end: 20px;
+  padding-inline-end: 50px; }
+
+u {
+  text-decoration: #F3AF34;
+  border-bottom: #F3AF34 2px solid; }
 
 figure {
   margin: 0;
@@ -166,11 +183,11 @@ figure div {
   padding-block-start: 92px; }
 
 .computer__submheader {
-  margin-block-start: -45px; }
+  margin-block-start: -45px;
+  padding-inline-end: 30px; }
 
 .table__menu {
-  mix-blend-mode: normal;
-  margin-inline-start: -1rem; }
+  mix-blend-mode: normal; }
 
 .lists {
   display: grid;
@@ -178,12 +195,10 @@ figure div {
   margin-inline-end: 4rem; }
 
 .lists li {
-  list-style: none;
   border: 0.504234px solid #979797;
   text-align: start; }
 
 .lists li span {
-  color: #FFB548;
   text-align: start; }
 
 .lists li p {
@@ -216,6 +231,90 @@ figure div {
   grid-row-start: 3;
   grid-row-end: 4; }
 
+.think__heading {
+  margin: 0;
+  padding-block-end: 20px; }
+
+.think__heading ~ p {
+  margin-inline-end: 80px; }
+
+.thinkBtn {
+  margin-block-start: 20px;
+  margin-inline-start: 10%; }
+
+.names {
+  text-transform: uppercase;
+  margin-inline-start: 20px;
+  margin-block-start: -16px; }
+
+.names ~ small {
+  text-transform: uppercase;
+  color: #FFFFFF;
+  opacity: 0.5;
+  margin-inline-start: 20px; }
+
+.table__menu--lists {
+  padding: 0;
+  margin-block-start: 35px;
+  margin-inline-end: 80px; }
+
+.items {
+  margin-inline-start: 45px;
+  margin-block-start: -45px; }
+
+.items ~ p small {
+  color: #FFFFFF;
+  font-size: 12px;
+  mix-blend-mode: normal;
+  opacity: 0.5; }
+
+.table__menu--lists li {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding-inline-start: 10px;
+  padding-block-start: 20px;
+  padding-block-end: 3px;
+  margin-block-end: 17px; }
+
+.item1::before {
+  content: url(../img/boy-gamer-evan.png); }
+
+.item2::before {
+  content: url(../img/girl-gamer-liffin.png); }
+
+.item3::before {
+  content: url(../img/boy-gamer-aaron.png); }
+
+.touch {
+  margin-inline-start: 40%;
+  margin-inline-end: 10%;
+  padding-block-start: 22%; }
+
+.touch__sub {
+  margin-block-start: -45px; }
+
+.buttons {
+  margin-inline-end: 10%; }
+
+.touch__button {
+  width: 100%; }
+
+.inputBtn {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+  margin-block-start: 49%;
+  padding: 10px;
+  text-align: start; }
+
+.inputBtn > input {
+  border: none;
+  color: #FFB548;
+  background: rgba(255, 255, 255, 0); }
+
+.inputBtn > label {
+  color: #FFFFFF;
+  opacity: 0.5; }
+
 .first__progress,
 .second__progress,
 .last__progress {
@@ -239,23 +338,30 @@ figure div {
   background-size: cover;
   margin-block-start: -20%;
   margin-block-end: -2px;
-  width: 100%;
-  height: 515px; }
+  padding-block-end: 60px;
+  width: 100%; }
 
 .masthead__computer {
   background-image: url(../img/dark-house-with-light.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   width: 100%;
   height: 719px; }
 
 .masthead__think {
-  background-color: black; }
+  background-image: url(../img/backgound-color-think.png);
+  margin-top: -2px;
+  background-size: 100% 100%;
+  width: 100%;
+  padding-inline-start: 40px;
+  padding-block-end: 30px; }
 
 .masthead__touch {
-  background-image: url(../img/sculpture.png);
+  background-image: url(../img/newsletter-sculpture.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #000;
+  margin-top: -1px;
   width: 100%;
   height: 834px; }
 
