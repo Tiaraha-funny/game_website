@@ -1,0 +1,65 @@
+.think__heading {
+    margin: 0;
+    padding-block-end: 20px;
+}
+
+.think__heading ~ p {
+    margin-inline-end: 80px;
+}
+
+.thinkBtn {
+    margin-block-start: 20px;
+    margin-inline-start: 10%;
+}
+
+
+.names {
+    text-transform: uppercase;
+    margin-inline-start: 20px;
+    margin-block-start: -16px;
+}
+
+.names ~ small {
+    text-transform: uppercase;
+    color: #FFFFFF;
+    opacity: 0.5;
+    margin-inline-start: 20px;
+}
+
+
+.table__menu--lists {
+    padding: 0;
+    margin-block-start: 35px;
+    margin-inline-end: 80px;
+}
+
+.items {
+    margin-inline-start: 45px;
+    margin-block-start: -45px;
+}
+
+.items ~ p small {
+    color: #FFFFFF;
+    font-size: 12px;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+.table__menu--lists li {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    padding-inline-start: 10px;
+    padding-block-start: 20px;
+    padding-block-end: 3px;
+    margin-block-end: 17px;
+}
+
+.item1::before {
+    content: url(../img/boy-gamer-evan.png);
+}
+.item2::before {
+    content: url(../img/girl-gamer-liffin.png);
+}
+.item3::before {
+    content: url(../img/boy-gamer-aaron.png);
+}

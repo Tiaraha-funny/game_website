@@ -8,11 +8,11 @@
 
 .computer__submheader {
     margin-block-start: -45px;
+    padding-inline-end: 30px;
 }
 
 .table__menu {
     mix-blend-mode: normal;
-    margin-inline-start: -1rem;
 } 
 
 .lists {
@@ -21,12 +21,10 @@
     margin-inline-end: 4rem;
 }
 .lists li {
-    list-style: none;
     border: 0.504234px solid #979797;
     text-align: start;
 }
 .lists li span {
-    color: #FFB548;
     text-align: start;
 }
 
@@ -34,30 +32,6 @@
     margin-inline-end: 1rem;
     margin-inline-start: 1rem;
 }
-
-// .lists__item1 > span {
-//     margin-inline-start: -3rem;
-// }
-
-// .lists__item2 > span {
-//     margin-inline-start: -5rem;
-// }
-
-// .lists__item3 > span {
-//     margin-inline-start: -3rem;
-// }
-
-// .lists__item4 > span {
-//     margin-inline-start: -3rem;
-// }
-
-// .lists__item5 > span {
-//     margin-inline-start: -2rem;
-// }
-
-// .lists__item6 > span {
-//     margin-inline-start: -2rem;
-// }
 
 .lists__item1 {
     grid-column-start: 1;

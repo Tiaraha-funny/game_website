@@ -11,6 +11,7 @@ main {
 button {
   background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
   border-radius: 3.94008px;
+  border: 0;
   padding: 16px;
 }
 h2 {
@@ -23,6 +24,15 @@ p {
 img {
   max-width: 100%;
 }
-u {
-  text-decoration: #F3AF34;
+span {
+  color: #FFB548;
+}
+
+li {
+  list-style: none;
+}
+
+footer {
+  background-color: #000000;
+  color: #ffffff;
 }

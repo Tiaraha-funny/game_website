@@ -45,7 +45,7 @@
   <main class="masthead">
 
     <article class="masthead__article masthead__sos">
-      <header class="masthead__article--header">
+      <header class="masthead__article--header header__sos">
         <h2>What is SOS?</h2>
       </header>
       <div class="masthead__article--subheading">
@@ -142,28 +142,28 @@
         <h2>What people think?</h2>
       </header>
       <div class="masthead__article--subheading">
-        <h3>Press quotes</h3>
+        <h3 class="think__heading">Press quotes</h3>
         <p>Our goal is to create a product and service that you’re satisfied with and use it every day. This is why
           we’re constantly working on our services to make it better every day and really listen to what our users has
           to say.</p>
-        <button class="orange__button">Read more testemonials</button>
+        <button class="orange__button thinkBtn">Read more testemonials</button>
       </div>
       <div class="table__menu">
-        <ul>
-          <li>
-            Evan Lahti <br> <small>PC Gamer</mall>
+        <ul class="table__menu--lists">
+          <li class="item1">
+            <div class="items"><span class="names"> Evan Lahti</span><br><small>PC Gamer</small></div>
               <p>“One of my gaming highlights of the year.”</p>
               <p><small>October 18, 2018</small></p>
           </li>
-          <li>
-            Jada Griffin <br><small>Nerdreactor </small>
+          <li class="item2">
+            <div class="items"><span class="names">Jada Griffin</span> <br><small>Nerdreactor </small></div>
             <p>
               “The next big thing in the world of streaming and survival games.”
             </p>
             <p><small>December 21, 2018</small></p>
           </li>
-          <li>
-            Aaron Williams <br><small>Uproxx</small>
+          <li class="item3">
+            <div class="items"><span class="names">Aaron Williams</span> <br><small>Uproxx</small></div>
             <p>
               “Snoop Dogg Playing The Wildly Entertaining ‘SOS’ Is Ridiculous.”
             </p>
@@ -174,28 +174,37 @@
     </article>
 
     <article class="masthead__article masthead__touch">
-      <header class="masthead__article--header">
-        <h2>Want to stay in touch?</h2>
-      </header>
-      <div class="masthead__article--subheading">
-        <h3>newsletter subscribe </h3>
+      <div class="touch">
+        <header class="masthead__article--header">
+          <h2>Want to stay in touch?</h2>
+        </header>
+        <div class="masthead__article--subheading touch__sub">
+          <h3>newsletter subscribe </h3>
+          <p>
+            In order to start receiving our news, all you have to do is enter your email address. Everything else will
+            be
+            taken care of by us. We will send you emails containing information about game. We don’t spam.
+          </p>
+        </div>
+      </div>
+      <div class="buttons">
         <p>
-          In order to start receiving our news, all you have to do is enter your email address. Everything else will
-          be
-          taken care of by us. We will send you emails containing information about game. We don’t spam.
+          <button class="inputBtn touch__button">
+            <label for="mail" class="mail">Your email address</label><br>
+            <input type="url" id="mail" name="mail" placeholder="Your email address" value="aliciliniavopir@gmail.com">
+          </button>
+        </p>
+        <p>
+          <button class="touch__button orange__button">Subscribe now</button>
         </p>
       </div>
-      <button>
-        <input type="text" placeholder="Your email address" value="aliciliniavopir@gmail.com">
-      </button>
-      <button class="orange__button">Subscribe now</button>
-    </article>
+      </article>
 
   </main>
 
   <footer>
     <div class="heading__footer">
-      <img src="./source-materials/img/orange__logoSOS.svg" alt="orange icon logo">
+      <img src="webroot/img/orange__logoSOS.svg" alt="a little orange icon for the header">
     </div>
     <nav class="navigation">
       <ul class="links">
@@ -221,6 +230,7 @@
       </div>
     </aside>
   </footer>
+
 </body>
 
 </html>

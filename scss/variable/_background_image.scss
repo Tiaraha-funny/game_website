@@ -11,26 +11,33 @@
     background-size: cover;
     margin-block-start: -20%;
     margin-block-end: -2px;
+    padding-block-end: 60px;
     width: 100%;
-    height: 515px;
   }
 
   .masthead__computer {
     background-image: url(../img/dark-house-with-light.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     width: 100%;
     height: 719px;
   }
   
   .masthead__think {
-    background-color: black;
+    background-image: url(../img/backgound-color-think.png);
+    margin-top: -2px;
+    background-size: 100% 100%;
+    width: 100%;
+    padding-inline-start: 40px;
+    padding-block-end: 30px;
   }
   
   .masthead__touch {
-    background-image: url(../img/sculpture.png);
+    background-image: url(../img/newsletter-sculpture.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #000;
+    margin-top: -1px;
     width: 100%;
     height: 834px;
   }

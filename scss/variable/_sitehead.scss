@@ -1,14 +1,14 @@
 .sitehead {
-    position: relative;
-    width: 100%;
-    height: 571px;
-    top: 0;
-    left: 0;
-    background-image: url("../img/big-yard-photo.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #ffffff;
-  }
+  position: relative;
+  top: 0;
+  left: 0;
+  background-image: url(../img/big-yard-photo.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: #ffffff;
+  margin-block-end: 0;
+  margin-inline-end: -20%;
+}
   
   .sitehead__header {
     display: flex;
@@ -19,23 +19,26 @@
   .sitehead__header > h1 {
     margin: 0;
   }
+  .language-selector {
+    margin-inline-start: 45%;
+  }
   .menu {
-    padding-inline-end: 1%;
+    padding-inline-end: 20%;
   }
   
   .sitehead__container {
-    position: absolute;
     text-align: center;
-    left: 11%;
-    right: 11%;
-    top: 38%;
-    bottom: 55%;
+    padding-inline-end: 100px;
+    padding-inline-start: 20px;
+    padding-block-start: 130px;
+    padding-block-end: 200px;
   }
     
   .sitehead__article--bottom {
     position: absolute;
-    padding-block-start: 10%;
-    padding-inline-end: 78%;
+    padding-inline-end: 200px;
+    margin-block-start: 120px;
+    padding-inline-start: 20px;
   }
   .heading {
     font-size: 33px;
