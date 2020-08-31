@@ -16,13 +16,22 @@
   font-style: normal;
   src: url("../fonts/OpenSans-Regular.woff2") format(woff2), url("../fonts/OpenSans-Regular.woff") format(woff); }
 
+html {
+  box-sizing: border-box; }
+
 body {
-  font-family: "bebas neue";
+  font-family: "Open Sans";
   margin: 0; }
 
 main {
   color: #ffffff;
   margin: -5px; }
+
+select {
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+  text-transform: uppercase; }
 
 button {
   background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
@@ -30,7 +39,11 @@ button {
   border: 0;
   padding: 16px; }
 
+h3 {
+  font-family: "bebas neue"; }
+
 h2 {
+  font-family: "bebas neue";
   margin: 0; }
 
 p {
@@ -50,6 +63,18 @@ footer {
   background-color: #000000;
   color: #ffffff; }
 
+aside {
+  text-align: center;
+  padding-block-start: 10%;
+  padding-block-end: 10%; }
+
+aside > p {
+  padding-block-end: 2rem;
+  font-size: 12px;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.5; }
+
 .sitehead {
   position: relative;
   top: 0;
@@ -58,8 +83,13 @@ footer {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   color: #ffffff;
-  margin-block-end: 0;
-  margin-inline-end: -20%; }
+  margin-block-end: 0; }
+
+#lang > option {
+  display: block;
+  background-color: black;
+  border-radius: 3px;
+  border: none; }
 
 .sitehead__header {
   display: flex;
@@ -71,10 +101,13 @@ footer {
   margin: 0; }
 
 .language-selector {
-  margin-inline-start: 45%; }
+  margin-inline-start: 50%;
+  border-inline-end: 2px solid grey;
+  height: 30px;
+  padding-inline-end: 30px; }
 
 .menu {
-  padding-inline-end: 20%; }
+  padding-inline-end: 5%; }
 
 .sitehead__container {
   text-align: center;
@@ -161,14 +194,11 @@ figure div {
 .figure-1,
 .figure-2,
 .figure-3 {
-  max-width: 100%;
   object-fit: cover;
   width: 100%;
-  height: 100%;
   display: block; }
 
 .special {
-  width: 60%;
   padding-inline-start: 34%;
   padding-block-start: 43%; }
 
@@ -274,7 +304,10 @@ figure div {
   padding-inline-start: 10px;
   padding-block-start: 20px;
   padding-block-end: 3px;
-  margin-block-end: 17px; }
+  margin-block-end: 17px;
+  background-image: url(../img/twitter-silver.png);
+  background-position: 95% 20%;
+  background-repeat: no-repeat; }
 
 .item1::before {
   content: url(../img/boy-gamer-evan.png); }
@@ -296,9 +329,6 @@ figure div {
 .buttons {
   margin-inline-end: 10%; }
 
-.touch__button {
-  width: 100%; }
-
 .inputBtn {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 3px;
@@ -315,6 +345,60 @@ figure div {
   color: #FFFFFF;
   opacity: 0.5; }
 
+.heading__footer {
+  text-align: center;
+  color: #ffffff; }
+
+.links {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-transform: uppercase;
+  row-gap: 30px; }
+
+.navigation {
+  border-bottom: 0.873968px solid #ffffff; }
+
+.navigation ul li a {
+  color: #ffffff;
+  text-decoration: none; }
+
+.links li:nth-of-type(1) {
+  grid-column-start: 1;
+  grid-column-end: 2; }
+
+.links li:nth-of-type(2) {
+  grid-column-start: 2;
+  grid-column-end: 3; }
+
+.links li:nth-of-type(3) {
+  grid-column-start: 3;
+  grid-column-end: 4; }
+
+.links li:nth-of-type(4) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3; }
+
+.links li:nth-of-type(5) {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3; }
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-inline-end: 2rem;
+  margin-block-end: 3rem;
+  margin-block-start: 3rem; }
+
+.security {
+  text-transform: uppercase;
+  font-family: "bebas neue"; }
+
 .first__progress,
 .second__progress,
 .last__progress {
@@ -329,7 +413,6 @@ figure div {
   background-image: url(../img/big-black-yard.png);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
   height: 689px; }
 
 .masthead__special {
@@ -338,21 +421,18 @@ figure div {
   background-size: cover;
   margin-block-start: -20%;
   margin-block-end: -2px;
-  padding-block-end: 60px;
-  width: 100%; }
+  padding-block-end: 60px; }
 
 .masthead__computer {
   background-image: url(../img/dark-house-with-light.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  width: 100%;
   height: 719px; }
 
 .masthead__think {
   background-image: url(../img/backgound-color-think.png);
   margin-top: -2px;
   background-size: 100% 100%;
-  width: 100%;
   padding-inline-start: 40px;
   padding-block-end: 30px; }
 
@@ -362,8 +442,4 @@ figure div {
   background-size: cover;
   background-color: #000;
   margin-top: -1px;
-  width: 100%;
   height: 834px; }
-
-img {
-  max-width: 100%; }
