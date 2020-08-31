@@ -1,11 +1,22 @@
+html {
+  box-sizing: border-box;
+}
+
 body {
-    font-family: "bebas neue";
-    margin: 0;
+  font-family: "Open Sans";
+  margin: 0;
 }
 
 main {
-    color: #ffffff;
-    margin: -5px;
+  color: #ffffff;
+  margin: -5px;
+}
+
+select {
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+  text-transform: uppercase;
 }
 
 button {
@@ -14,7 +25,11 @@ button {
   border: 0;
   padding: 16px;
 }
+h3 {
+  font-family: "bebas neue";
+}
 h2 {
+  font-family: "bebas neue";
   margin: 0;
 }
 p {
@@ -35,4 +50,18 @@ li {
 footer {
   background-color: #000000;
   color: #ffffff;
+}
+
+aside {
+  text-align: center;
+  padding-block-start: 10%;
+  padding-block-end: 10%;
+}
+
+aside > p {
+  padding-block-end: 2rem;
+  font-size: 12px;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.5;
 }

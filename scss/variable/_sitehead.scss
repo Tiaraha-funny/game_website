@@ -7,7 +7,13 @@
   background-size: 100% 100%;
   color: #ffffff;
   margin-block-end: 0;
-  margin-inline-end: -20%;
+}
+
+#lang > option {
+  display: block;
+  background-color: black;
+  border-radius: 3px;
+  border: none;
 }
   
   .sitehead__header {
@@ -20,10 +26,13 @@
     margin: 0;
   }
   .language-selector {
-    margin-inline-start: 45%;
+    margin-inline-start: 50%;
+    border-inline-end: 2px solid grey;
+    height: 30px;
+    padding-inline-end: 30px;
   }
   .menu {
-    padding-inline-end: 20%;
+    padding-inline-end: 5%;
   }
   
   .sitehead__container {

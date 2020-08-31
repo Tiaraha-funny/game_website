@@ -26,7 +26,6 @@
     margin-inline-start: 20px;
 }
 
-
 .table__menu--lists {
     padding: 0;
     margin-block-start: 35px;
@@ -52,6 +51,10 @@
     padding-block-start: 20px;
     padding-block-end: 3px;
     margin-block-end: 17px;
+
+    background-image: url(../img/twitter-silver.png);
+    background-position: 95% 20%;
+    background-repeat: no-repeat;
 }
 
 .item1::before {
@@ -63,3 +66,6 @@
 .item3::before {
     content: url(../img/boy-gamer-aaron.png);
 }
+// .names::after {
+//     content: url(../img/twitter-silver.png);
+// }
