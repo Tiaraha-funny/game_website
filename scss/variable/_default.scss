@@ -65,3 +65,13 @@ aside > p {
   mix-blend-mode: normal;
   opacity: 0.5;
 }
+
+summary {
+  color: #F3AF34;
+  text-transform: uppercase;
+}
+
+summary ~ p {
+  margin-inline-start: 4rem;
+  color: #ffffff;
+}
