@@ -13,9 +13,18 @@
   <div class="sitehead">
 
     <header class="sitehead__header">
-      <h1>
+      <h1 class="big-heading">
         <img src="webroot/img/orange__logoSOS.svg" alt="a little orange icon for the header">
       </h1>
+      <div class="header__lists">
+        <ul class="header__lists--items">
+          <li><a href="/">main</a></li>
+          <li><a href="/">about</a></li>
+          <li><a href="/">game features</a></li>
+          <li><a href="/">System requirements</a></li>
+          <li><a href="/">quotes</a></li>
+        </ul>
+      </div>
       <form class="language-selector">
         <select name="lang" id="lang">
           <div class="wrapper">
@@ -27,8 +36,16 @@
         </select>
       </form>
       <div class="menu">
+        <input type="checkbox" name="menu" id="menu">
         <img src="webroot/img/menu-icon.png" alt="">
       </div>
+      <div class="header__icons">
+        <a href=""><img src="webroot/img/ball-icon.png" alt=""></a>
+        <a href=""><img src="webroot/img/steam-icon.png" alt=""></a>
+      </div>
+      <label for="menu">
+        <span class="checkbox_menu"></span>
+      </label>
     </header>
 
     <div class="sitehead__container">
@@ -44,7 +61,12 @@
         <button class="orange__button">Buy Now on Steam | $14.99</button>
       </div>
       <div class="sitehead__article--bottom">
-        The story
+        <select name="story" id="story">
+          <option class="story" value="">The story<br></option>
+          <option value="">Long time ago</option>
+          <option value="">Yesterday</option>
+          <option value="">Today</option>
+        </select>
         <div class="progress"></div>
       </div>
     </div>

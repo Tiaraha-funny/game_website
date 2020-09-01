@@ -75,3 +75,19 @@ summary ~ p {
   margin-inline-start: 4rem;
   color: #ffffff;
 }
+
+  
+@media (min-width: $querry) {
+  body {
+    box-sizing: border-box;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 80px;
+  }
+  main article {
+    padding: 4rem;
+  }
+}

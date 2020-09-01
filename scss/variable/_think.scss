@@ -66,6 +66,8 @@
 .item3::before {
     content: url(../img/boy-gamer-aaron.png);
 }
-// .names::after {
-//     content: url(../img/twitter-silver.png);
-// }
+
+
+@media (min-width: $querry) {
+
+}
