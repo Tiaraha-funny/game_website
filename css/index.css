@@ -83,6 +83,16 @@ summary ~ p {
   margin-inline-start: 4rem;
   color: #ffffff; }
 
+@media (min-width: 1440px) {
+  body {
+    box-sizing: border-box; }
+  h2 {
+    font-size: 24px; }
+  h3 {
+    font-size: 80px; }
+  main article {
+    padding: 4rem; } }
+
 .sitehead {
   position: relative;
   top: 0;
@@ -135,6 +145,60 @@ summary ~ p {
 
 .sitehead__article--subheading {
   font-size: 18px; }
+
+.header__lists {
+  display: none; }
+
+[type="checkbox"] {
+  display: none; }
+
+.header__icons {
+  display: none; }
+
+[type="checkbox"]:checked ~ .header__lists {
+  display: block;
+  width: 250px;
+  background-color: beige; }
+
+option {
+  background-color: grey; }
+
+@media (min-width: 1440px) {
+  .sitehead {
+    text-align: center; }
+  .sitehead__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  .menu {
+    display: none; }
+  .header__lists {
+    display: flex; }
+  .header__lists--items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center; }
+  .header__lists--items li {
+    margin-inline-end: 1rem; }
+  .header__lists--items > li a {
+    list-style: none;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase; }
+  .header__icons {
+    display: block; }
+  .sitehead__article--bottom {
+    text-align: center;
+    display: inline-block; }
+  .sitehead__container {
+    margin-block-start: 10rem; }
+  .sitehead__container h2 {
+    font-size: 80px; }
+  #story {
+    margin-inline-start: -5rem; }
+  .sitehead__article--subheading > h3 {
+    font-size: 24px; } }
 
 .masthead__article {
   padding-inline-start: 20px; }
