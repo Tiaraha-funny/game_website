@@ -223,6 +223,16 @@ u {
   text-decoration: #F3AF34;
   border-bottom: #F3AF34 2px solid; }
 
+@media (min-width: 1440px) {
+  .masthead__sos {
+    display: flex;
+    flex-direction: row; }
+  figure {
+    width: 80%; }
+  .description {
+    width: 50%;
+    margin-inline-start: 30%; } }
+
 figure {
   margin: 0;
   padding: 0;
