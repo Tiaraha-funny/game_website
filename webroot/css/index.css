@@ -91,7 +91,11 @@ summary ~ p {
   h3 {
     font-size: 80px; }
   main article {
-    padding: 4rem; } }
+    padding: 4rem; }
+  figure {
+    width: 50%;
+    padding: 0;
+    margin: 0; } }
 
 .sitehead {
   position: relative;
@@ -187,7 +191,7 @@ option {
     text-decoration: none;
     text-transform: uppercase; }
   .header__icons {
-    display: block; }
+    display: none; }
   .sitehead__article--bottom {
     text-align: center;
     display: inline-block; }
@@ -199,6 +203,17 @@ option {
     margin-inline-start: -5rem; }
   .sitehead__article--subheading > h3 {
     font-size: 24px; } }
+
+@media (min-width: 1440px) {
+  .header__icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; }
+  .header__icons a {
+    margin-inline-end: 2rem; }
+  .sitehead__header {
+    padding-left: 2rem;
+    padding-right: 3rem; } }
 
 .masthead__article {
   padding-inline-start: 20px; }
@@ -227,8 +242,6 @@ u {
   .masthead__sos {
     display: flex;
     flex-direction: row; }
-  figure {
-    width: 80%; }
   .description {
     width: 50%;
     margin-inline-start: 30%; } }
@@ -343,6 +356,11 @@ figure div {
   grid-row-start: 3;
   grid-row-end: 4; }
 
+@media (min-width: 1440px) {
+  .masthead__computer > .table__menu {
+    width: 40%;
+    padding-block-start: 6rem; } }
+
 .think__heading {
   margin: 0;
   padding-block-end: 20px; }
@@ -400,6 +418,32 @@ figure div {
 .item3::before {
   content: url(../img/boy-gamer-aaron.png); }
 
+@media (min-width: 1440px) {
+  .masthead__think {
+    display: flex;
+    flex-direction: row; }
+  .contents__think {
+    width: 50%; }
+  .think__heading ~ p {
+    width: 340px; }
+  .table__menu--lists {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); }
+  .item1 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-inline-start: -9rem; }
+  .item2 {
+    margin-inline-end: 10rem;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3; }
+  .item3 {
+    grid-row-start: 3;
+    grid-column-start: 2;
+    margin-inline-start: -12rem; } }
+
 .touch {
   margin-inline-start: 40%;
   margin-inline-end: 10%;
@@ -429,6 +473,23 @@ figure div {
 .inputBtn > label {
   color: #FFFFFF;
   opacity: 0.5; }
+
+@media (min-width: 1440px) {
+  .touch__contents {
+    width: 73.5%;
+    margin-inline-start: 20rem; }
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    margin-inline-start: 33rem; }
+  .inputBtn {
+    margin: 0;
+    padding-inline-end: 10rem; }
+  .subscribe {
+    margin-block-start: 0;
+    margin-inline-start: 2rem;
+    padding-inline-end: 3.5rem;
+    padding-inline-start: 4rem; } }
 
 .heading__footer {
   text-align: center;
@@ -484,6 +545,15 @@ figure div {
   text-transform: uppercase;
   font-family: "bebas neue"; }
 
+@media (min-width: 1440px) {
+  .footer {
+    display: flex;
+    flex-direction: row; }
+  .navigation, .links, .icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; } }
+
 .first__progress,
 .second__progress,
 .last__progress {
@@ -498,12 +568,12 @@ figure div {
   background-image: url(../img/big-black-yard.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 689px; }
+  padding-bottom: 10%; }
 
 .masthead__special {
   background-image: url(../img/strong-angry-man.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   margin-block-start: -20%;
   margin-block-end: -2px;
   padding-block-end: 60px; }
@@ -512,7 +582,7 @@ figure div {
   background-image: url(../img/dark-house-with-light.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  height: 719px; }
+  padding-bottom: 10%; }
 
 .masthead__think {
   background-image: url(../img/backgound-color-think.png);
@@ -524,10 +594,22 @@ figure div {
 .masthead__touch {
   background-image: url(../img/newsletter-sculpture.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   background-color: #000;
   margin-top: -1px;
-  height: 834px; }
+  padding-bottom: 10%; }
+
+@media (min-width: 1440px) {
+  .masthead__sos {
+    padding-top: 0; }
+  .masthead__special {
+    background-image: url(../img/a-strong-angry-man.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%; }
+  .masthead__touch {
+    background-image: url(../img/newletter-touch-sculpture.png);
+    background-repeat: no-repeat;
+    background-size: 30%; } }
 
 summary::-webkit-details-marker {
   display: none; }

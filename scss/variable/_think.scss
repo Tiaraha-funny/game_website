@@ -69,5 +69,37 @@
 
 
 @media (min-width: $querry) {
+    .masthead__think {
+        display: flex;
+        flex-direction: row;
+    }
+    .contents__think {
+        width: 50%;
+    }
+    .think__heading ~ p {
+        width: 340px;
+    }
 
+    .table__menu--lists {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .item1 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        margin-inline-start: -9rem;
+    }
+    .item2 {
+        margin-inline-end: 10rem;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .item3 {
+        grid-row-start: 3;
+        grid-column-start: 2;
+        margin-inline-start: -12rem;
+    }
 }

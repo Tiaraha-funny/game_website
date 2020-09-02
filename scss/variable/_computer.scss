@@ -62,5 +62,9 @@
 
   
 @media (min-width: $querry) {
+    .masthead__computer > .table__menu {
+    width: 40%;
+    padding-block-start: 6rem;
+}
 
 }

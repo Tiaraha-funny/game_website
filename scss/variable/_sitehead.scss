@@ -104,7 +104,7 @@
       text-transform: uppercase;
     }
     .header__icons {
-      display: block;
+      display: none;
     }
 
     .sitehead__article--bottom {
@@ -127,6 +127,18 @@
     }
   }
     
-  @media (min-width: $querry) {
-
+@media (min-width: $querry) {
+    .header__icons {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
   }
+
+  .header__icons a {
+    margin-inline-end: 2rem;
+  }
+  .sitehead__header {
+    padding-left: 2rem;
+    padding-right: 3rem;
+  }
+}

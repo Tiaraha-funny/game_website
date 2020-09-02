@@ -61,5 +61,13 @@
 
   
 @media (min-width: $querry) {
-
+    .footer {
+        display: flex;
+        flex-direction: row;
+    }
+    .navigation, .links, .icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }

@@ -2,13 +2,12 @@
     background-image: url(../img/big-black-yard.png);
     background-repeat: no-repeat;
     background-size: cover;
-    // width: 100%;
-    height: 689px;
+    padding-bottom: 10%;
   }
   .masthead__special {
     background-image: url(../img/strong-angry-man.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     margin-block-start: -20%;
     margin-block-end: -2px;
     padding-block-end: 60px;
@@ -19,15 +18,13 @@
     background-image: url(../img/dark-house-with-light.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    // width: 100%;
-    height: 719px;
+  padding-bottom: 10%;
   }
   
   .masthead__think {
     background-image: url(../img/backgound-color-think.png);
     margin-top: -2px;
     background-size: 100% 100%;
-    // width: 100%;
     padding-inline-start: 40px;
     padding-block-end: 30px;
   }
@@ -35,13 +32,24 @@
   .masthead__touch {
     background-image: url(../img/newsletter-sculpture.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     background-color: #000;
     margin-top: -1px;
-    // width: 100%;
-    height: 834px;
+    padding-bottom: 10%;
   }
   
   @media (min-width: $querry) {
-
+    .masthead__sos {
+      padding-top: 0;
+    }
+    .masthead__special{
+      background-image: url(../img/a-strong-angry-man.png);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+    .masthead__touch {
+      background-image: url(../img/newletter-touch-sculpture.png);
+      background-repeat: no-repeat;
+      background-size: 30%;
+    }
   }
