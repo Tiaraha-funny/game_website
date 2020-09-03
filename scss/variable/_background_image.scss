@@ -7,12 +7,12 @@
   .masthead__special {
     background-image: url(../img/strong-angry-man.png);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 166% 100%;
     margin-block-start: -20%;
-    margin-block-end: -2px;
-    padding-block-end: 60px;
-    // width: 100%;
-  }
+    background-position-x: -126px;
+    margin-block-end: -4px;
+    padding-block-end: 57px;
+}
 
   .masthead__computer {
     background-image: url(../img/dark-house-with-light.png);
@@ -40,12 +40,15 @@
   
   @media (min-width: $querry) {
     .masthead__sos {
-      padding-top: 0;
+      padding-top: 10%;
     }
     .masthead__special{
-      background-image: url(../img/a-strong-angry-man.png);
+      background: radial-gradient(51.1% 80.48% at 30.85% 53.65%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 19.2%, rgba(4, 5, 6, 0.520671) 47.48%, #080A0B 99.74%);
+      background-image: url(../img/strong-angry-man.png);
       background-repeat: no-repeat;
-      background-size: 100% 100%;
+      background-size: cover;
+      background-position-x: 15%;
+      padding-bottom: 20%;
     }
     .masthead__touch {
       background-image: url(../img/newletter-touch-sculpture.png);

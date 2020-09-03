@@ -53,5 +53,7 @@ figure {
   }
     
   @media (min-width: $querry) {
-  
+  figure {
+    padding-bottom: 60%;
+  }
   }

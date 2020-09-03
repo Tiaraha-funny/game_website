@@ -10,11 +10,6 @@
     text-transform: uppercase;
     row-gap: 30px;
 }
-
-.navigation {
-    border-bottom: 0.873968px solid #ffffff;
-}
-
 .navigation ul li a {
     color: #ffffff;
     text-decoration: none;
@@ -58,16 +53,44 @@
     text-transform: uppercase;
     font-family: "bebas neue";
 }
+.footer {
+    border-bottom: 0.873968px solid grey;
+}
 
   
 @media (min-width: $querry) {
+    .heading__footer > img {
+        width: 90px;
+    }
     .footer {
         display: flex;
         flex-direction: row;
+        margin-inline-start: 4rem;
     }
-    .navigation, .links, .icons {
+    .links {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        width: 100%;
+        margin: auto;
+    }
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 700px;
+    } 
+    .security {
+        display: flex;
+        flex-direction: row;
+        padding-inline-end: 22%;
+    }
+    .security p {
+        margin: 10px;
     }
 }

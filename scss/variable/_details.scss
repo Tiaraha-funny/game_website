@@ -3,17 +3,24 @@ summary::-webkit-details-marker {
 }
 
 details {
-  margin-block-end: 2rem;
+  position: relative;
+  > p {
+    margin: 0;
+  }
+}
+
+summary {
+  position: relative;
 }
 
 summary::before {
   content: ' ';
+  position: absolute;
   border: solid 1px #ffffff;
   border-radius: 50%;
-  padding: 1px;
-  padding-block-start: 0;
-  padding-inline-end: 21px;
-  margin-inline-end: 1rem;
+  padding: 0.5rem;
+  left: -2rem;
+  top: 0.5rem;
 }
 
 details[open] summary::before {
@@ -24,23 +31,25 @@ details::before {
   content: '';
   position: absolute;
   border-right: 1px solid;
-  margin-inline-start: -84px;
-  padding: 3rem;
-}
-details:nth-of-type(1)::before {
-  content: '';
-  height: 1%;
+  height: 100%;
+  left: -1.5rem;
+  top: 1rem;
 }
 
-details[open]:nth-of-type(1)::before {
-  content: '';
-  height: 10%;
-}
+// details:nth-of-type(1)::before {
+//   content: '';
+// }
 
-details[open]:nth-of-type(2)::before {
-  content: '';
-  height: 9%;
-}
+// details[open]:nth-of-type(1)::before {
+//   content: '';
+//   height: 10%;
+// }
+
+// details[open]:nth-of-type(2)::before {
+//   content: '';
+//   height: 9%;
+// }
+
 details:nth-of-type(3)::before {
   content: '';
   border-right: none;
@@ -49,5 +58,7 @@ details:nth-of-type(3)::before {
 
   
 @media (min-width: $querry) {
-
+  details > summary ~ p {
+    width: 363px;
+  }
 }
