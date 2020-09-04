@@ -3,14 +3,9 @@ $format2: format(woff2);
 $font-headings: "hahaha";
 $querry : 1440px;
 
-$display-flex: (
-    display-flex: 'flex',
-    flex-direction: 'row',
-    justify-content: 'space-between',
-);
 
-// @each $flex in $display {
-//     display: map-get($flex, display-flex);
-//     flex-direction: map-get($flex, flex-direction);
-//     justify-content: map-get($flex, justify-content);
-// }
+@mixin flex() {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

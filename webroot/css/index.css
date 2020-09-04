@@ -20,7 +20,7 @@ html {
   box-sizing: border-box; }
 
 body {
-  font-family: "Open Sans";
+  font-family: "bebas neue";
   margin: 0; }
 
 main {
@@ -39,11 +39,7 @@ button {
   border: 0;
   padding: 16px; }
 
-h3 {
-  font-family: "bebas neue"; }
-
 h2 {
-  font-family: "bebas neue";
   margin: 0; }
 
 p {
@@ -69,7 +65,6 @@ aside {
   padding-block-end: 10%; }
 
 aside > p {
-  font-family: "bebas neue";
   padding-block-end: 2rem;
   font-size: 12px;
   color: #FFFFFF;
@@ -137,9 +132,6 @@ summary ~ p {
   height: 30px;
   padding-inline-end: 30px; }
 
-.menu {
-  padding-inline-end: 5%; }
-
 .sitehead__container {
   text-align: center;
   padding-inline-end: 100px;
@@ -159,19 +151,8 @@ summary ~ p {
 .sitehead__article--subheading {
   font-size: 18px; }
 
-.header__lists {
-  display: none; }
-
-[type="checkbox"] {
-  display: none; }
-
 .header__icons {
   display: none; }
-
-[type="checkbox"]:checked ~ .header__lists {
-  display: block;
-  width: 250px;
-  background-color: beige; }
 
 option {
   background-color: grey; }
@@ -190,9 +171,9 @@ option {
   .header__lists {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     width: 0px;
-    margin: auto;
-    justify-content: space-between; }
+    margin: auto; }
   .header__lists--items {
     display: flex;
     flex-direction: row;
@@ -252,7 +233,8 @@ u {
 @media (min-width: 1440px) {
   .masthead__sos {
     display: flex;
-    flex-direction: row; }
+    flex-direction: row;
+    justify-content: space-between; }
   .description {
     width: 50%;
     margin-inline-start: 30%; } }
@@ -445,7 +427,8 @@ figure div {
 @media (min-width: 1440px) {
   .masthead__think {
     display: flex;
-    flex-direction: row; }
+    flex-direction: row;
+    justify-content: space-between; }
   .contents__think {
     width: 50%; }
   .think__heading ~ p {
@@ -505,7 +488,9 @@ figure div {
   .buttons {
     display: flex;
     flex-direction: row;
-    margin-inline-start: 32rem; }
+    justify-content: space-between;
+    margin-inline-end: 13%;
+    margin-inline-start: 40%; }
   .inputBtn {
     margin: 0;
     padding-inline-end: 10rem; }
@@ -569,9 +554,11 @@ figure div {
 .footer {
   border-bottom: 0.873968px solid grey; }
 
+.heading__footer > img {
+  width: 90px;
+  margin-block-end: 3rem; }
+
 @media (min-width: 1440px) {
-  .heading__footer > img {
-    width: 90px; }
   .footer {
     display: flex;
     flex-direction: row;
@@ -590,11 +577,12 @@ figure div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 700px; }
+    width: 840px; }
   .security {
     display: flex;
     flex-direction: row;
-    padding-inline-end: 22%; }
+    justify-content: space-between;
+    padding-inline-end: 30%; }
   .security p {
     margin: 10px; } }
 
@@ -698,3 +686,33 @@ details:nth-of-type(3)::before {
 @media (min-width: 1440px) {
   details > summary ~ p {
     width: 363px; } }
+
+[type="checkbox"]:checked ~ .language-selector {
+  display: block;
+  width: 250px;
+  background-color: beige; }
+
+.checkbox__menu {
+  position: absolute;
+  left: 90%;
+  top: 14px; }
+
+.header__lists {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -280px;
+  width: 250px;
+  z-index: 1;
+  background-color: white;
+  transform: translateX(-50%); }
+
+[type="checkbox"]:checked > .checkbox__menu ~ label ~ .sitehead__header .header__lists {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 250px;
+  z-index: 1;
+  background-color: #000000;
+  transform: translateX(0); }

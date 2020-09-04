@@ -30,8 +30,7 @@ u {
   
 @media (min-width: $querry) {
   .masthead__sos {
-    display: flex;
-    flex-direction: row;
+    @include flex;
   }
     .description {
     width: 50%;

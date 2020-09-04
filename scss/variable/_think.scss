@@ -70,8 +70,7 @@
 
 @media (min-width: $querry) {
     .masthead__think {
-        display: flex;
-        flex-direction: row;
+        @include flex;
     }
     .contents__think {
         width: 50%;

@@ -42,9 +42,9 @@
     margin-inline-start: 15rem;
   }
   .buttons {
-    display: flex;
-    flex-direction: row;
-    margin-inline-start: 32rem;
+    @include flex;
+    margin-inline-end: 13%;
+    margin-inline-start: 40%;
   }
   .inputBtn {
     margin: 0;

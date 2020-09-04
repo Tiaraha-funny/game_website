@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-family: "Open Sans";
+  font-family: "bebas neue";
   margin: 0;
 }
 
@@ -26,12 +26,11 @@ button {
   padding: 16px;
 }
 h3 {
-  font-family: "bebas neue";
 }
 h2 {
-  font-family: "bebas neue";
   margin: 0;
 }
+
 p {
   font-family: "Open Sans";
   font-size: 14px;
@@ -59,7 +58,6 @@ aside {
 }
 
 aside > p {
-  font-family: "bebas neue";
   padding-block-end: 2rem;
   font-size: 12px;
   color: #FFFFFF;
@@ -100,9 +98,7 @@ summary ~ p {
   }
 
   aside {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    @include flex;
     padding: 0;
 }
 aside > p {
